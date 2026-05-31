@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "TAN Paradiso";
+  src: url("./assets/fonts/tan-paradiso.otf") format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
 :root {
   --ink: #33291f;
   --espresso: #241b16;
@@ -9,6 +17,7 @@
   --terracotta: #a85638;
   --line: rgba(51, 41, 31, 0.15);
   --shadow: 0 22px 60px rgba(51, 41, 31, 0.14);
+  --accent-font: "TAN Paradiso", Didot, "Bodoni 72", Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -120,10 +129,11 @@ a {
 .eyebrow {
   margin: 0 0 12px;
   color: var(--terracotta);
-  font-size: 0.75rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-family: var(--accent-font);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: none;
 }
 
 .hero .eyebrow {

@@ -1,6 +1,3 @@
-const travelAdvisorEmail = "kendall.avery@fora.travel";
-
-const form = document.querySelector("#leadForm");
 const carousel = document.querySelector("#tripCarousel");
 const heroSlides = [...document.querySelectorAll(".hero-slide")];
 
@@ -22,28 +19,4 @@ document.querySelectorAll("[data-carousel]").forEach((button) => {
       behavior: "smooth",
     });
   });
-});
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const data = new FormData(form);
-  const get = (field) => data.get(field)?.toString().trim() || "Not provided";
-
-  const subject = `Travel planning inquiry from ${get("name")}`;
-  const body = [
-    "New travel inquiry",
-    "",
-    `Name: ${get("name")}`,
-    `Email: ${get("email")}`,
-    "",
-    "Interested in:",
-    get("interest"),
-  ].join("\n");
-
-  const mailto = new URL(`mailto:${travelAdvisorEmail}`);
-  mailto.searchParams.set("subject", subject);
-  mailto.searchParams.set("body", body);
-
-  window.location.href = mailto.toString();
 });

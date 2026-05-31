@@ -2,23 +2,19 @@
 
 This is a simple responsive website for a Fora-affiliated travel advisor. It
 uses a warm neutral visual style, a trip example carousel, and a lightweight
-email-based lead form.
+link to Kendall's Fora intake form.
 
 ## Contact Email
 
 Client inquiries are addressed to `kendall.avery@fora.travel`.
 
-## How The Inquiry Form Works
+## How The Intake Link Works
 
-The form asks only for name, email, and the client's trip interest. It opens the
-client's email app with a prepared message addressed to Kendall's Fora email.
+The contact section links directly to Kendall's secure Fora client intake form:
+`https://secure.foratravel.com/intake/MbBjhw7FKs`.
 
-Later, this can be upgraded to:
-
-- A Google Form or Typeform
-- A CRM or email marketing tool
-- A backend form submission
-- Direct Fora booking links or embedded booking workflows
+Later, this can be upgraded with custom CRM, email marketing, or booking
+workflows if needed.
 
 ## Preview
 
